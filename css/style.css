@@ -1,0 +1,198 @@
+/*----Global----*/
+* {
+    box-sizing: border-box;
+    
+}
+/*----General styles---- */
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #444;
+    margin:  0 auto;
+}
+
+.title {
+    display: block;
+    color:white;
+    background: #383847;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+header {
+    display: block;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+    border-bottom: black solid 4px;
+   
+}
+
+fieldset {
+    border: none;
+}
+
+.contact {
+    border-bottom: black solid 2px;
+    padding-bottom: 0.6em;
+}
+
+label,
+p {
+    opacity: 0.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.contact input,
+select  {
+    width: 100%;
+    height: 2.5em;
+    font-size: 18px;
+    border: none;
+    background: #f2f2f2;
+    margin: 10px 0 15px 0;
+}
+
+.contact li:last-child {
+    width: 50%;
+}
+
+input::placeholder {
+    text-align: right;
+    margin-right: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #c2c2c2;
+}
+
+.newsletter input,
+.newsletter li{
+    margin: 7px 13px 13px 0;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 2%;
+    margin: 10px 0 10px 5px;
+    resize: none;
+}
+
+textarea:focus,
+.contact input:focus,
+.contact select:focus {
+    background: #fff;
+    box-shadow: 2px 4px 4px,
+                -2px -3px 3px #444;            
+    border: none;
+    outline: inset;
+    outline-color: #444;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    background: #52bab3;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.85em;
+    margin-bottom: 9rem;
+}
+/*----Media query----*/
+
+@media screen and (min-width: 768px) {
+    main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end; 
+    margin-bottom: 2em;
+}
+
+header, 
+form {
+    width: 55%;
+    max-width: 768px;
+}
+
+.contact li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact select,
+.contact input {
+    width: 60%;
+    margin-left: auto;
+}
+
+
+li input[name="zip"] {
+    width: 30%;
+   margin: 0 auto;
+}
+
+.contact li:last-child {
+    width: 100%;
+} 
+li select:hover,
+.contact input:hover {
+    box-shadow: 2px 4px 4px,
+                -2px -3px 3px #444; 
+    cursor: pointer;                
+}
+
+.newsletter input:hover {
+    cursor: pointer;
+}
+
+.newsletter input:active {
+    box-shadow: 2px 4px 4px,
+                -2px -3px 3px #444; 
+}
+
+button:hover {
+    color: #52bab3;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 2px 4px 4px,
+                3px 3px 3px black;             
+}
+
+button:active {
+    color: #fff;
+    background: #52bab3;
+    box-shadow: none;
+}
+
+footer p {
+    margin-bottom: 7em;
+    padding-bottom: 4em;
+}
+}
+
