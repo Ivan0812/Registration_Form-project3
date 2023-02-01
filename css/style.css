@@ -1,9 +1,13 @@
+
 /*----Global----*/
+
 * {
     box-sizing: border-box;
     
 }
+
 /*----General styles---- */
+
 body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
@@ -22,6 +26,10 @@ body {
     text-transform: uppercase;
 }
 
+main {
+    background: #f6faf7;
+}
+
 header {
     display: block;
     max-width: 90%;
@@ -29,7 +37,6 @@ header {
     margin: auto;
     padding-bottom: 2em;
     border-bottom: black solid 4px;
-   
 }
 
 fieldset {
@@ -60,12 +67,14 @@ select  {
     border: none;
     background: #f2f2f2;
     margin: 10px 0 15px 0;
-}
+    transition: background-color 1s ease;
+}            
 
 .contact li:last-child {
     width: 50%;
 }
 
+textarea::placeholder,
 input::placeholder {
     text-align: right;
     margin-right: 10px;
@@ -88,6 +97,7 @@ textarea {
     border-radius: 2%;
     margin: 10px 0 10px 5px;
     resize: none;
+    transition: background-color 1s ease;       
 }
 
 textarea:focus,
@@ -99,6 +109,8 @@ textarea:focus,
     border: none;
     outline: inset;
     outline-color: #444;
+    padding-left: 10px;
+    
 }
 
 button {
@@ -120,15 +132,16 @@ footer {
     font-size: 0.85em;
     margin-bottom: 9rem;
 }
+
 /*----Media query----*/
 
 @media screen and (min-width: 768px) {
+    
     main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    align-items: flex-end; 
     margin-bottom: 2em;
 }
 
@@ -147,29 +160,26 @@ form {
 }
 .contact select,
 .contact input {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
 }
 
 
 li input[name="zip"] {
-    width: 30%;
-   margin: 0 auto;
+    width: 40%;
 }
 
 .contact li:last-child {
-    width: 100%;
-} 
+    width: 50%;
+}
+
+.newsletter input:hover, 
 li select:hover,
 .contact input:hover {
-    box-shadow: 2px 4px 4px,
-                -2px -3px 3px #444; 
     cursor: pointer;                
 }
 
-.newsletter input:hover {
-    cursor: pointer;
-}
+
 
 .newsletter input:active {
     box-shadow: 2px 4px 4px,
