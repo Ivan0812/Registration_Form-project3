@@ -26,9 +26,6 @@ body {
     text-transform: uppercase;
 }
 
-main {
-    background: #f6faf7;
-}
 
 header {
     display: block;
@@ -37,6 +34,7 @@ header {
     margin: auto;
     padding-bottom: 2em;
     border-bottom: black solid 4px;
+    background-color: #4383832d;
 }
 
 fieldset {
@@ -67,7 +65,7 @@ select  {
     border: none;
     background: #f2f2f2;
     margin: 10px 0 15px 0;
-    transition: background-color 1s ease;
+    transition: background-color 0.5s ease-in-out;
 }            
 
 .contact li:last-child {
@@ -97,13 +95,14 @@ textarea {
     border-radius: 2%;
     margin: 10px 0 10px 5px;
     resize: none;
-    transition: background-color 1s ease;       
+    transition: background-color 0.5s ease-in-out;       
 }
 
 textarea:focus,
 .contact input:focus,
 .contact select:focus {
-    background: #fff;
+    background: #4383832d;
+    opacity: 0.8;
     box-shadow: 2px 4px 4px,
                 -2px -3px 3px #444;            
     border: none;
